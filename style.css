@@ -1,0 +1,106 @@
+body{
+    margin: 5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    max-width: 1024px;
+    background-color: #DDDDDD;
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #666666;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: #666666;
+    margin: 0;
+    padding: 8px 0 8px 20px;
+}
+
+#content{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    width: 100%;
+    margin: 16px;
+}
+
+.card{
+    background-color: #DDDDDD;
+    width: calc(33% - 10px)
+}
+
+.cardContent{
+    background-color: white;
+    margin: 10px;
+}
+
+h4{
+    margin: 0px;
+    padding: 10px;
+}
+
+span{
+    padding-left: 10px;
+    color: #666666;
+}
+
+.navBar{
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 5px;
+}
+
+nav a{
+    background-color: #DDDDDD;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .card{
+        width: calc(50% - 10px)
+    }
+
+    .navBar {   
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .card{
+        width: calc(80% - 10px)
+    }
+    #content{
+        justify-content: center;
+    }
+    nav {   
+        flex-wrap: wrap;
+    }
+}
